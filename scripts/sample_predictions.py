@@ -6,7 +6,7 @@ from pathlib import Path
 root_path = Path(__file__).parent.parent
 data_path = root_path / "data" / "raw" / "swiggy.csv"
 
-# prediction endpoint
+# prediction endpoint url 
 predict_url = "http://127.0.0.1:8000/predict"
 
 # sample row for testing the endpoint
