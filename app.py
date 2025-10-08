@@ -17,7 +17,6 @@ set_config(transform_output='pandas')
 import dagshub
 import mlflow.client
 
-dagshub.auth.add_app_token(token=os.getenv("DAGSHUB_USER_TOKEN"))
 dagshub.init(repo_owner='parthgiht', 
              repo_name='swiggy-delivery-time-prediction', 
              mlflow=True)
