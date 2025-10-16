@@ -27,3 +27,4 @@ if response.status_code == 200:
     print(f"The prediction value by the API is {float(prediction):.2f} min")
 else:
     print("Error:", response.status_code)
+
