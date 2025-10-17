@@ -3,6 +3,8 @@ Swiggy-Delivery-Time-Prediction
 
 Build ML model that can predict food delivery time
 
+![image alt](https://github.com/parthgiht/swiggy-delivery-time-prediction/blob/master/swiggy.jpeg?raw=true)
+
 ## 📌 Overview
 
 This project builds a machine learning (ML) model to predict the time it takes to deliver food orders on Swiggy, a popular online food delivery service. The goal is to estimate delivery time in minutes using data from orders, locations, and other factors. This can help improve customer experience and optimize operations for delivery partners.
