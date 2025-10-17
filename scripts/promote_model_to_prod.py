@@ -19,7 +19,7 @@ def load_model_information(file_path):
 
 # get model name from run_information.json
 model_name = load_model_information("run_information.json")["model_name"]
-stage = "Production"
+stage = "Stagging"
 
 # get the latest version from staging stage
 client = MlflowClient()
@@ -30,7 +30,7 @@ latest_versions = client.get_latest_versions(name=model_name,stages=[stage])
 latest_model_version_staging = latest_versions[0].version
 
 # promotion stage
-promotion_stage = "Production"
+promotion_stage = "Stagging"
 
 client.transition_model_version_stage(
     name=model_name,

@@ -29,7 +29,7 @@ def load_transformer(transformer_path):
 
 # set model name
 model_name = load_model_information("run_information.json")["model_name"]
-stage = "Production"
+stage = "Stagging"
 
 # load the model
 model_path = f"models:/{model_name}/{stage}"
