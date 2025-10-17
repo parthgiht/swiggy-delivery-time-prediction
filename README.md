@@ -3,7 +3,74 @@ Swiggy-Delivery-Time-Prediction
 
 Build ML model that can predict food delivery time
 
-Project Organization
+![image alt](https://github.com/parthgiht/swiggy-delivery-time-prediction/blob/master/swiggy.jpeg?raw=true)
+
+## 📌 Overview
+
+This project builds a machine learning (ML) model to predict the time it takes to deliver food orders on Swiggy, a popular online food delivery service. The goal is to estimate delivery time in minutes using data from orders, locations, and other factors. This can help improve customer experience and optimize operations for delivery partners.
+The project follows a standard data science workflow, starting from data collection to model training and evaluation. It uses Python and common libraries for data processing and ML.
+
+
+## 🔑 Key Objectives
+
+- Collect and prepare data on food delivery orders.
+  
+- Build features from raw data, such as distance between restaurant and customer.
+  
+- Train ML models to predict delivery time accurately.
+  
+- Evaluate model performance and create visualizations for insights.
+
+## 🤖 Technologies Used
+
+1. **Programming Language**: Python 3.x
+
+2. **Data Processing**: Pandas, NumPy
+
+3. **Machine Learning**: Scikit-learn (for models like regression)
+
+4. **Visualization**: Matplotlib, Seaborn
+
+5. **Environment Management**: Pip, requirements.txt
+
+6. **Documentation**: Sphinx
+
+7. **Project Structure**: Cookiecutter Data Science template
+
+
+## 📂 Dataset
+The dataset includes historical Swiggy order data with features like:
+
+1. Order placement time
+   
+2. Restaurant and customer locations (latitude/longitude)
+   
+3. Order type and size
+   
+4. Traffic conditions 
+
+Data is stored in the **data/raw** folder. Processed versions go to **data/processed** for modeling.
+
+
+
+## Usage
+Run the following commands using the Makefile:
+
+1. **Prepare data**: make data
+
+2. **Build features**: make features
+
+3. **Train model**: make train
+
+4. **Predict**: make predict
+
+5. **Visualize results**: make visualize
+
+For exploration, open Jupyter notebooks in the notebooks folder, such as 1.0-initial-data-exploration.ipynb.
+
+
+
+🧱 Project Structure
 ------------
 
     ├── LICENSE
@@ -51,6 +118,9 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
+
+## ✅ Results
+The model achieves [insert accuracy metric, e.g., RMSE of 5-10 minutes] on test data. Key findings include that distance and time of day are strong predictors of delivery time. Check **reports/figures/** for charts.
 
 --------
 
